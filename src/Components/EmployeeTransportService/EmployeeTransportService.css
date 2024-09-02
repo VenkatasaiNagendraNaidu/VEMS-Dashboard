@@ -1,0 +1,95 @@
+/* Container styling */
+.employee-transport-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Left-side content styling */
+  .ets-content {
+    padding-right: 20px;
+    text-align: left;
+    width: 428px;
+
+  }
+  
+  .logo {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .ets-content h1 {
+    margin-top: -50px;
+    width: 130%;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .highlight {
+    width: 478px;
+
+    color: #1ba94c; /* Green color for "Employee" */
+  }
+  
+  .subtitle {
+    width: 478px;
+
+    color: #e31b23; /* Red color for subtitle */
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    width: 478px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .demo-button,
+  .contact-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .demo-button {
+    background-color: #1ba94c;
+    color: #fff;
+  }
+  
+  .contact-button {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Right-side images styling */
+  .images img{
+    display: flex;
+    height: 593px;
+    width: 628px;
+  }
+  
+  .employee-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }

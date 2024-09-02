@@ -1,0 +1,65 @@
+/* Container styling */
+.top-features-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  .highlight {
+    color: #1ba94c; /* Green color for "Top" */
+  }
+  
+  /* Features grid styling */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.5s;
+  }
+  .feature-card:hover{  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .feature-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1rem;
+    color: #ddd;
+    font-weight: bold;
+  }
