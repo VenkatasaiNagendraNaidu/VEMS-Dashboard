@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaTachometerAlt, FaMapMarkerAlt, FaUserTie, FaCar, FaUserShield, FaUsers, FaHistory, FaFileAlt, FaCreditCard } from 'react-icons/fa';
 import './Sidebar.css'; // Import the CSS file
+import { IoMdSettings } from "react-icons/io";
 
 const data = [
   { title: "DashBoard", icon: <FaTachometerAlt /> },
@@ -11,7 +12,7 @@ const data = [
   { title: "Employees", icon: <FaUsers /> },
   { title: "Trip History", icon: <FaHistory /> },
   { title: "Reports", icon: <FaFileAlt /> },
-  { title: "settings", icon: <FaCreditCard /> },
+  { title: "settings", icon: <IoMdSettings /> },
   { title: "Payments", icon: <FaCreditCard /> },
 ];
 
