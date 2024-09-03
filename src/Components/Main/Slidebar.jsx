@@ -11,10 +11,13 @@ const data = [
   { title: "Employees", icon: <FaUsers /> },
   { title: "Trip History", icon: <FaHistory /> },
   { title: "Reports", icon: <FaFileAlt /> },
+  { title: "settings", icon: <FaCreditCard /> },
   { title: "Payments", icon: <FaCreditCard /> },
 ];
 
 const Dashboard = () => (
+  <div className="dashboard-wrapper">
+    <h2 className="services-title">Our Services</h2>
   <div className="dashboardd-container">
     {data.map((item, index) => (
       <div className="card1" key={index}>
@@ -24,6 +27,7 @@ const Dashboard = () => (
         <div>{item.title}</div>
       </div>
     ))}
+  </div>
   </div>
 );
 

@@ -23,7 +23,7 @@ const Footer = () => {
                 <h4>Help</h4>
                 <p>Contact Us</p>
                 <div className="footer-icons">
-                <a style={{height:"100px",width:"100px"}} href="">
+                <a href="">
                     <FaLinkedin />
                     </a> 
                 <a style={{height:"100px",width:"100px"}} href="">
