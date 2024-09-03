@@ -19,7 +19,7 @@
     margin: auto;
     width: 60%;
     font-size: 18px;
-    color: #444444;
+    color: #3f3d3d;
     margin-bottom: 40px;
 }
 .genesis-carousel{
@@ -32,9 +32,9 @@
     margin: 0px 150px;
     align-items: center;
     justify-content: center;
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .carousel-image img {

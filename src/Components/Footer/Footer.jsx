@@ -2,16 +2,17 @@ import React from 'react';
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import './Footer.css';
+import { IoMdCall,IoIosMail } from "react-icons/io";
 
 const Footer = () => {
     return (
         <>
         <div className="footer-container">
-            <div className="footer-section">
+            <div style={{width:"25%"}} className="footer-section">
                 <img src="" alt="VEMS" className="footer-logo" />
                 <p>1ST Floor ,The Hive,SRP Stradford,Rajiv Gandhi Salai,PTK-Nagar,Chennai - 600 016</p>
-                <p>📞 +91 90921 90321</p>
-                <p>✉️ vtsenterprises@gmail.com</p>
+                <p style={{ display: 'flex', alignItems: 'center' }}><IoMdCall /> &nbsp; +91 90921 90321</p>
+                <p style={{ display: 'flex', alignItems: 'center' }}><IoIosMail /> &nbsp; vtsenterprises@gmail.com</p>
             </div>
             <div className="footer-section">
                 <h4>Legal</h4>
