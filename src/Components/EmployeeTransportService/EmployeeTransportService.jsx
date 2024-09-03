@@ -9,9 +9,9 @@ const EmployeeTransportService = () => {
         <h1>
           <span className="highlight">Employee</span> Transport Service
         </h1>
-        <p className="subtitle">Revolutionize Your Corporate Transport with VM Routes</p>
+        <p className="subtitle">Revolutionize Your Corporate Transport with VEMS</p>
         <p className="description">
-          VM Routes is an intuitive software solution designed to streamline and simplify corporate transportation.
+          VEMS  is an intuitive software solution designed to streamline and simplify corporate transportation.
           From managing drivers and vehicles to optimizing routes and providing live tracking, it's your all-in-one
           platform for efficient and hassle-free employee travel.
         </p>

@@ -62,7 +62,7 @@ const GenesisSection = () => {
         </section>
 
         <section className="why-vm-routes">
-      <h2 className="why-title">Why VM Routes?</h2>
+      <h2 className="why-title">Why VEMS?</h2>
       <div className="why-cards">
         <div className="why-card">
           <div className="icon-wrapper">
