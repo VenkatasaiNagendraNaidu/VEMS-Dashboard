@@ -1,5 +1,4 @@
 import './App.css';
-import DashboardLayout from './Components/DashboardLayout/DashboardLayout';
 import EmployeeTransportService from './Components/EmployeeTransportService/EmployeeTransportService';
 import GenesisSection from './Components/GenesisSection/GenesisSection';
 import HeroSection from './Components/HeroSection/HeroSection ';
@@ -20,7 +19,6 @@ function App() {
       <EmployeeTransportService/>
       <TopFeatures/>
       <Footer />
-      {/* <DashboardLayout/> */}
     </div>
   );
 }
