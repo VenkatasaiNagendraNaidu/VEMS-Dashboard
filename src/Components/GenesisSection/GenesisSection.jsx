@@ -10,24 +10,24 @@ import Tick from '../GenesisSection/Tick.jpg'
 const GenesisSection = () => {
     const carouselData = [
         {
-            image: 'https://res.cloudinary.com/dlo7urgnj/image/upload/v1724663475/logo_xd5tyb.jpg',
+            image: 'https://res.cloudinary.com/dlo7urgnj/image/upload/v1725335289/impact_icon.01711b99_ffe5lo.png',
             title: 'Born in a Studio',
             subtitle: 'Not in an Office..!',
-            description: `VM Routes is one of our finest products born in our VirtualMaze studio not 
+            description: `VEMS  is one of our finest products born in our VirtualMaze studio not 
                           in our office. Designed by eminent team and developed by stalwarts of techies.`
         },
         {
-            image: {Rocket},
+            image:"https://res.cloudinary.com/dlo7urgnj/image/upload/v1725335212/studio_icon.e34a8db3_qq2k4k.png",
             title: 'Born in a Studio',
             subtitle: 'Not in an Office..!',
-            description: `VM Routes is one of our finest products born in our VirtualMaze studio not 
+            description: `VEMS  is one of our finest products born in our VirtualMaze studio not 
                           in our office. Designed by eminent team and developed by stalwarts of techies.`
         },
         {
-            image: {Rocket},
+            image: "https://res.cloudinary.com/dlo7urgnj/image/upload/v1725335376/transport_icon.2f1275e4_lewlry.png",
             title: 'Born in a Studio',
             subtitle: 'Not in an Office..!',
-            description: `VM Routes is one of our finest products born in our VirtualMaze studio not 
+            description: `VEMS is one of our finest products born in our VirtualMaze studio not 
                           in our office. Designed by eminent team and developed by stalwarts of techies.`
         }
     ];
