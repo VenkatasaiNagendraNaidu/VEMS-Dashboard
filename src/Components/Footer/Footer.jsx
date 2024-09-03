@@ -9,7 +9,7 @@ const Footer = () => {
         <>
         <div className="footer-container">
             <div style={{width:"25%"}} className="footer-section">
-                <img src="" alt="VEMS" className="footer-logo" />
+                <img src="https://res.cloudinary.com/dlo7urgnj/image/upload/v1724663475/logo_xd5tyb.jpg" alt="VEMS" className="footer-logo" />
                 <p>1ST Floor ,The Hive,SRP Stradford,Rajiv Gandhi Salai,PTK-Nagar,Chennai - 600 016</p>
                 <p style={{ display: 'flex', alignItems: 'center' }}><IoMdCall /> &nbsp; +91 90921 90321</p>
                 <p style={{ display: 'flex', alignItems: 'center' }}><IoIosMail /> &nbsp; vtsenterprises@gmail.com</p>
