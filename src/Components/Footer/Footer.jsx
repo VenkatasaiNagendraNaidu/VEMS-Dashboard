@@ -3,14 +3,16 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import './Footer.css';
 import { IoMdCall,IoIosMail } from "react-icons/io";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
     return (
         <>
         <div className="footer-container">
-            <div style={{width:"25%"}} className="footer-section">
-                <img src="https://res.cloudinary.com/dlo7urgnj/image/upload/v1724663475/logo_xd5tyb.jpg" alt="VEMS" className="footer-logo" />
-                <p>1ST Floor ,The Hive,SRP Stradford,Rajiv Gandhi Salai,PTK-Nagar,Chennai - 600 016</p>
+            <div className="footer-section">
+                {/* <img src="https://res.cloudinary.com/dlo7urgnj/image/upload/v1724663475/logo_xd5tyb.jpg" alt="VEMS" className="footer-logo" />  */}
+                <h4>VEMS</h4>
+                <p style={{ display: 'flex', alignItems: 'center',textAlign:"left" }}><FaLocationDot /> &nbsp;&nbsp;1ST Floor ,The Hive,SRP Stradford,Rajiv Gandhi Salai,PTK-Nagar,Chennai - 600 016</p>
                 <p style={{ display: 'flex', alignItems: 'center' }}><IoMdCall /> &nbsp; +91 90921 90321</p>
                 <p style={{ display: 'flex', alignItems: 'center' }}><IoIosMail /> &nbsp; vtsenterprises@gmail.com</p>
             </div>
@@ -25,10 +27,10 @@ const Footer = () => {
                 <p>Contact Us</p>
                 <div className="footer-icons">
                 <a href="">
-                    <FaLinkedin />
+                    <FaLinkedin style={{ height: '20px', width: '20px' }}/>
                     </a> 
-                <a style={{height:"100px",width:"100px"}} href="">
-                <FaFacebookSquare />
+                <a href="">
+                < FaFacebookSquare style={{ height: '20px', width: '20px' }}/>
                 </a>
                 </div>
             </div>

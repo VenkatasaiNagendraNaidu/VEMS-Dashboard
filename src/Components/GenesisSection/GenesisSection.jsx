@@ -36,7 +36,7 @@ const GenesisSection = () => {
         <>
         <section className="genesis-section">
             <div className="genesis-header">
-                <h1><span className="highlight">The</span> Genesis</h1>
+                <h1><span className="highlight">The</span> Origin</h1>
                 <p>Automation streamlines trip scheduling, ensuring precision and accuracy in pick-ups and drop-offs. Say goodbye to guesswork and hello to a well-organized transportation system.</p>
             </div>
             <Carousel 
