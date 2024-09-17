@@ -11,24 +11,24 @@ const GenesisSection = () => {
     const carouselData = [
         {
             image: 'https://res.cloudinary.com/dlo7urgnj/image/upload/v1725335289/impact_icon.01711b99_ffe5lo.png',
-            title: 'Born in a Studio',
+            title: 'Crafted in a Studio',
             subtitle: 'Not in an Office..!',
-            description: `VEMS  is one of our finest products born in our VirtualMaze studio not 
-                          in our office. Designed by eminent team and developed by stalwarts of techies.`
+            description: `VEMS stands as one of our premier creations, developed in the VirtualMaze studio rather than a traditional office.
+             It was designed by an exceptional team and brought to life by tech industry veterans.`
         },
         {
             image:"https://res.cloudinary.com/dlo7urgnj/image/upload/v1725335212/studio_icon.e34a8db3_qq2k4k.png",
-            title: 'Born in a Studio',
-            subtitle: 'Not in an Office..!',
-            description: `VEMS  is one of our finest products born in our VirtualMaze studio not 
-                          in our office. Designed by eminent team and developed by stalwarts of techies.`
+            title: 'Innovated in a Studio',
+            subtitle: 'Transforming Transportation..!',
+            description: `VEMS, a standout product from our VirtualMaze studio, is not just a creation but a revolution. Developed by top-tier experts,
+             it has redefined employee transportation with its cutting-edge technology, driving efficiency and seamless mobility..`
         },
         {
             image: "https://res.cloudinary.com/dlo7urgnj/image/upload/v1725335376/transport_icon.2f1275e4_lewlry.png",
-            title: 'Born in a Studio',
-            subtitle: 'Not in an Office..!',
-            description: `VEMS is one of our finest products born in our VirtualMaze studio not 
-                          in our office. Designed by eminent team and developed by stalwarts of techies.`
+            title: 'Upgrade Your Future with VEMS',
+            subtitle: 'Born in our VirtualMaze studio..!',
+            description: `VEMS is more than just a product—it's a game-changer. Crafted by visionary designers and expert developers,
+             it's set to transform the future of employee transportation, bringing innovation and efficiency to every journey..`
         }
     ];
 
@@ -37,7 +37,8 @@ const GenesisSection = () => {
         <section className="genesis-section">
             <div className="genesis-header">
                 <h1><span className="highlight">The</span> Origin</h1>
-                <p>Automation streamlines trip scheduling, ensuring precision and accuracy in pick-ups and drop-offs. Say goodbye to guesswork and hello to a well-organized transportation system.</p>
+                <p>
+                Automation optimizes trip scheduling, guaranteeing precise and accurate pick-ups and drop-offs. Eliminate uncertainty and embrace a seamlessly organized transportation experience.</p>
             </div>
             <Carousel 
                 showThumbs={false} 

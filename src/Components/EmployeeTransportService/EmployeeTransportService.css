@@ -83,12 +83,12 @@
   /* Right-side images styling */
   .images img{
     display: flex;
-    height: 693px;
-    width: 728px;
+    height: 500px;
+    width: 500px;
   }
   
   .employee-image {
-    width: 300px;
+    width: 200px;
     height: auto;
     border-radius: 8px;
     object-fit: cover;

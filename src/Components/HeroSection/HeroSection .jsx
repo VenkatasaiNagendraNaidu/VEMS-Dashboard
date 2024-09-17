@@ -7,14 +7,13 @@ const HeroSection = () => {
         <section className="hero-section">
             <div className="hero-content">
                 <h1>
-                    Employee Transportation Meets <br />
-                    <span className="highlight">Automation Excellence</span>
+                Experience the Future of Employee<br />
+                    <span className="highlight">Transportation with Automation</span>
                 </h1>
                 <h2>Unveil the Future of Employee Mobility</h2>
                 <p>
-                    At VEMS, we navigate the future of corporate transportation through 
-                    cutting-edge automation solutions. Elevate your workforce's journey with our 
-                    innovative services that re-imagine employee transportation.
+                At VEMS, we're revolutionizing corporate mobility with state-of-the-art automation solutions.
+             Enhance your team's commute with our forward-thinking services, designed to transform employee transportation.
                 </p>
             </div>
             <div className="hero-image">

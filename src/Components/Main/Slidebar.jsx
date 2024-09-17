@@ -12,8 +12,9 @@ const data = [
   { title: "Employees", icon: <FaUsers /> },
   { title: "Trip History", icon: <FaHistory /> },
   { title: "Reports", icon: <FaFileAlt /> },
-  { title: "settings", icon: <IoMdSettings /> },
   { title: "Payments", icon: <FaCreditCard /> },
+  { title: "settings", icon: <IoMdSettings /> },
+
 ];
 
 const Dashboard = () => (
