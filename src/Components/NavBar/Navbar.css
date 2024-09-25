@@ -1,43 +1,111 @@
-
+/* General Navbar Styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    border-bottom: 1px solid #eaeaea;
-  }
-  
-  .navbar-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width:20px; */
-    /* height:50px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #eaeaea;
+}
 
-  }
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-logo span {
+  font-weight: bolder;
+  font-size: 40px;
+  margin-top: -15px;
+  background: linear-gradient(45deg, rgb(2, 205, 2), rgb(82, 81, 81));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-logo img {
+  height: 80px;
+  width: 80px;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.navbar-links a.active,
+.navbar-links a:hover {
+  color: #00A859; 
+}
+
+/* Tablet (Medium-sized screens) */
+@media (max-width: 1024px) {
   .navbar-logo span {
-    font-weight: bolder;
-    font-size: 40px;
-    background: linear-gradient(45deg, rgb(2, 205, 2), rgb(82, 81, 81));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 30px; /* Decrease font size for tablets */
   }
-  .navbar-logo img{
-    margin:auto;
-    height: 80px;
-    width: 80px;
+
+  .navbar-logo img {
+    height: 60px;
+    width: 60px;
   }
-  
-  
+
   .navbar-links a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
+    margin-left: 15px;
+    font-size: 16px; /* Slightly smaller font for links */
   }
-  
-  .navbar-links a.active,
-  .navbar-links a:hover {
-    color: #00A859; /* Green color for active or hovered links */
+}
+
+/* Mobile Devices (Small-sized screens) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
   }
+
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+
+  .navbar-logo span {
+    font-size: 25px;
+  }
+
+  .navbar-logo img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .navbar-links {
+    flex-direction: column; /* Stack the links vertically */
+  }
+
+  .navbar-links a {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile Devices (Extra small-sized screens) */
+@media (max-width: 480px) {
+  .navbar-logo span {
+    font-size: 22px;
+  }
+
+  .navbar-logo img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .navbar-links a {
+    font-size: 12px;
+  }
+}

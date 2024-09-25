@@ -9,10 +9,10 @@ const Navbar = () => {
                 <span>VEMS</span>
             </div>
             <div className="navbar-links">
-                <a href="/" className="active">Home</a>
-                <a href="/contact">Contact Us</a>
-                <a href="/client">Client</a>
-                <a href="/operator">Admin</a>
+                {/* <a href="/" className="active">Home</a> */}
+                {/* <a href="/">Contact Us</a> */}
+                {/* <a href="/login">Admin</a> */}
+                <a href="/login" style={{border:"1px solid blue",padding:"10px",borderRadius:"10px",boxShadow:"2px 2px 5px lightblue"}}>Client Register/Login</a>
             </div>
         </nav>
     );

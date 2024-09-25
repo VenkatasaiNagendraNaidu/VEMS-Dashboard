@@ -13,12 +13,12 @@ const Login = () => {
     <div className="login-container">
       <div className="login-box">
         <div className="logo">
-          {/* <img src="logo.png" alt="VM Routes Logo" /> */}
+          {/* <img src="logo.png" alt="VEMS Logo" /> */}
           <h3>VEMS</h3>
         </div>
 
         <div className="login-title">
-          <span>CLIENT LOGIN</span>
+          <span>LOGIN</span>
         </div>
 
         <form className="login-form">
@@ -33,17 +33,17 @@ const Login = () => {
               placeholder="Enter Password"
               required
             />
-            <span className="toggle-password" onClick={togglePasswordVisibility}>
+            {/* <span className="toggle-password" onClick={togglePasswordVisibility}>
               {passwordShown ? '🙈' : '👁️'}
-            </span>
+            </span> */}
           </div>
 
-          <div className="options">
+          {/* <div className="options">
             <label>
               <input type="checkbox" /> Remember me
             </label>
             <a href="#">Forgot Password?</a>
-          </div>
+          </div> */}
 
           <button type="submit" className="login-btn">
             Login

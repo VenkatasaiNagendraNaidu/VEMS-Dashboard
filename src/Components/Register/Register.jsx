@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Register.css';
+import { Link } from 'react-router-dom'; 
+
 
 const Login = () => {
   const [passwordShown, setPasswordShown] = useState(false);
@@ -12,12 +14,12 @@ const Login = () => {
     <div className="login-container">
       <div className="login-box">
         <div className="logo">
-          {/* <img src="logo.png" alt="VM Routes Logo" /> */}
+          {/* <img src="logo.png" alt="VEMS Logo" /> */}
           <h3>VEMS</h3>
         </div>
 
         <div className="login-title">
-          <span>CLIENT Register</span>
+          <span>Register</span>
         </div>
 
         <form className="login-form">
@@ -32,15 +34,18 @@ const Login = () => {
               placeholder="Enter Password"
               required
             />
-            <span className="toggle-password" onClick={togglePasswordVisibility}>
+            {/* <span className="toggle-password" onClick={togglePasswordVisibility}>
               {passwordShown ? '🙈' : '👁️'}
-            </span>
+            </span> */}
           </div>
 
           <button type="submit" className="login-btn">
             Register
           </button>
         </form>
+        <div className="register">
+          <p>Already have an account? <Link to="/login">Login here</Link></p> 
+        </div>
 
         
       </div>
