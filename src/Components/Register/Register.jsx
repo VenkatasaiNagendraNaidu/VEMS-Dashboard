@@ -14,7 +14,7 @@ const Login = () => {
     <div className="login-container">
       <div className="login-box">
         <div className="logo">
-          {/* <img src="logo.png" alt="VEMS Logo" /> */}
+          <img src="https://res.cloudinary.com/dlo7urgnj/image/upload/v1727276496/vemslogo_rsa3cx.png" alt="VEMS Logo" />
           <h3>VEMS</h3>
         </div>
 
