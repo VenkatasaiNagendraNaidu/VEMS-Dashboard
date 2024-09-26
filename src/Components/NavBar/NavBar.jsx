@@ -11,8 +11,8 @@ const Navbar = () => {
             <div className="navbar-links">
                 <a href="/" className="active">About</a>
                 <a href="/">Services</a>
-                {/* <a href="/login">Admin</a> */}
-                <a href="/login" style={{border:"1px solid blue",padding:"10px",borderRadius:"10px",boxShadow:"2px 2px 5px lightblue"}}>Admin Register/Login</a>
+                <a href="/">Features</a>
+                <a href="/login" style={{border:"1px solid blue",padding:"10px",marginRight:"10px",borderRadius:"10px",boxShadow:"2px 2px 5px lightblue"}}>Admin Register/Login</a>
             </div>
         </nav>
     );
