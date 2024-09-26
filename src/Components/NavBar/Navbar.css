@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: white;
+  /* padding: 10px 20px; */
+  background-color: rgb(255, 253, 253);
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -24,8 +24,9 @@
 }
 
 .navbar-logo img {
-  height: 70px;
-  width: 80px;
+  height: 80px;
+  width: 90px;
+  display: flex;
 }
 
 .navbar-links {
