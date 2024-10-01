@@ -144,7 +144,7 @@ app.post('/register', (req, res) => {
 
 app.get('/admin/accept', (req, res) => {
     const email = req.query.email;
-    const name = "Admin";  
+    const name = "Admin";   
 
    
     const sql = `UPDATE admins SET status = 1 WHERE email = ?`;
@@ -193,6 +193,6 @@ app.get('/admin/reject', (req, res) => {
     });
 });
 
-app.listen(5000, () => {
+app.listen(5001, () => {
     console.log('Server running on http://localhost:5000');
 });
