@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Register.css';
 import { Link } from 'react-router-dom'; 
 import Modal from 'react-modal';
+import axios from 'axios';
 import { FaCheckCircle } from 'react-icons/fa'; 
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -25,8 +26,14 @@ const customStyles = {
 };
 
 Modal.setAppElement('#root');
-const Login = () => {
+
+const Register = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [error, setError] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   // Function to open modal
   const openModal = () => {
@@ -36,69 +43,108 @@ const Login = () => {
   // Function to close modal
   const closeModal = () => {
     setModalIsOpen(false);
+    setSuccessMessage('');
   };
-  const [passwordShown, setPasswordShown] = useState(false);
 
-  const togglePasswordVisibility = () => {
-    setPasswordShown(!passwordShown);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    setSuccessMessage('');
+
+    const requestBody = {
+      name,
+      email,
+      phoneNumber,
+    };
+    console.log(requestBody);
+    
+
+    try {
+      const response = await axios.post('http://localhost:5001/register', requestBody);
+      
+      if (response.status === 200) {
+        setSuccessMessage(response.data);  // Show success message from backend
+        openModal();
+      } else {
+        setError('Registration failed. Please try again.');
+      }
+    } catch (error) {
+      if (error.response) {
+        // Server responded with a status other than 200
+        setError(`Error: ${error.response.data}`);
+      } else if (error.request) {
+        // Request was made but no response was received
+        setError('No response from the server. Please try again later.');
+      } else {
+        // Something else went wrong in setting up the request
+        setError(`An error occurred: ${error.message}`);
+      }
+    }
   };
 
   return (
     <div className="login-container">
       <div className="login-box">
         <div className="logo">
-          <div className='RegisterLogo'>
-          <img src="https://res.cloudinary.com/dlo7urgnj/image/upload/v1727276496/vemslogo_rsa3cx.png" alt="VEMS Logo" />
+          <div className="RegisterLogo">
+            <img src="https://res.cloudinary.com/dlo7urgnj/image/upload/v1727276496/vemslogo_rsa3cx.png" alt="VEMS Logo" />
           </div>
-          {/* <h3>TRAVELLO</h3> */}
         </div>
 
         <div className="login-title">
           <span>Admin Register</span>
         </div>
 
-        <form className="login-form">
-          
-        <label htmlFor="Name">Name</label>
-          <input type="name" id="name" placeholder="Enter Your Name" required />
-          
-          <label htmlFor="Phone Number">Phone Number</label>
-          <input type="number" id="phno" placeholder="+91XXXXXXXXXX" required />
+        {error && <p className="error-message">{error}</p>}
+
+        <form className="login-form" onSubmit={handleSubmit}>
+          <label htmlFor="name">Name</label>
+          <input 
+            type="text" 
+            id="name" 
+            placeholder="Enter Your Name" 
+            value={name} 
+            onChange={(e) => setName(e.target.value)} 
+            required 
+          />
+
+          <label htmlFor="phoneNumber">Phone Number</label>
+          <input 
+            type="tel" 
+            id="phoneNumber" 
+            placeholder="+91XXXXXXXXXX" 
+            value={phoneNumber} 
+            onChange={(e) => setPhoneNumber(e.target.value)} 
+            required 
+          />
 
           <label htmlFor="email">Email Address</label>
-          <input type="email" id="email" placeholder="example@email.com" required />
+          <input 
+            type="email" 
+            id="email" 
+            placeholder="example@email.com" 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} 
+            required 
+          />
 
-
-          {/* <label htmlFor="password">Password</label>
-          <div className="password-container">
-            <input
-              type={passwordShown ? 'text' : 'password'}
-              id="password"
-              placeholder="Enter Password"
-              required
-            />
-          </div> */}
-
-          <button type="submit" className="login-btn" onClick={openModal}>
+          <button type="submit" className="login-btn">
             Register
           </button>
         </form>
-        <div className="register">
-          <p>Already have an account? <Link to="/login">Login here</Link></p> 
-        </div>
 
-        
+        <div className="register">
+          <p>Already have an account? <Link to="/login">Login here</Link></p>
+        </div>
       </div>
+
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Registration Success Modal"
       >
-        <p>
-          Your details have been successfully shared with the admin team, and
-          the response will be shared to your email ASAP.
-        </p>
+        <p>{'Your details have been successfully shared with the admin team, and the response will be shared to your email ASAP.'}</p>
         <button className="close-popup-btn" onClick={closeModal}>
           Close
         </button>
@@ -107,4 +153,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
