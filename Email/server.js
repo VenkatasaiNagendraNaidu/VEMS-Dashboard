@@ -192,7 +192,23 @@ app.get('/admin/reject', (req, res) => {
             });
     });
 });
+app.get('/login', (req, res) => {
+    const { email, password } = req.body;
 
+    const sql = `SELECT * FROM admins WHERE email = ? AND password = ? AND status = 1`;
+
+
+    connection.query(sql, [email, password], (err, results) => {
+        if (err) {
+            return res.status(500).send('Database error: ' + err);
+        }
+
+        if (results.length === 0) {
+            return res.status(401).send('Invalid email, password, or inactive account.');
+        }
+        res.status(200).send('Login successful!');
+    });
+});
 app.listen(5000, () => {
     console.log('Server running on http://localhost:5000');
 });
